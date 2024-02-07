@@ -69,9 +69,19 @@ return {
   --     require "plugins.configs.which-key"(plugin, opts) -- include the default astronvim config that calls the setup call
   --     -- Add bindings which show up as group name
   --     local wk = require "which-key"
+  --     local chatgpt = require "chatgpt"
   --     wk.register({
-  --       b = { name = "Buffer" },
-  --     }, { mode = "n", prefix = "<leader>" })
+  --       p = {
+  --         name = "ChatGPT",
+  --         e = {
+  --           function() chatgpt.edit_with_instructions() end,
+  --           "Edit with instructions",
+  --         },
+  --       },
+  --     }, {
+  --       prefix = "<leader>",
+  --       mode = "v",
+  --     })
   --   end,
   -- },
 }

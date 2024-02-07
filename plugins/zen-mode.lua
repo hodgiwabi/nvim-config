@@ -1,9 +1,10 @@
 return {
   "folke/zen-mode.nvim",
-  lazy = false,
+  lazy = true,
   opts = {
     window = {
       backdrop = 1,
+      width = 0.67,
       options = {
         number = false,
         relativenumber = false,
@@ -17,7 +18,7 @@ return {
         enabled = false,
       },
       kitty = {
-        enabled = false,
+        enabled = true,
         font = "+8",
       },
       gitsigns = {
